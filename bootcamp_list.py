@@ -10,7 +10,7 @@ for i in range(n):
     li.append(user_item)
 even_odd_list = []
 for i in range(n - 1, 0, -1):
-    for j in range(1, n):
+    for j in range(i):
         # checking that the product is even and sum of elements is odd
         if ((li[i] * li[j]) % 2 == 0) and ((li[i] + li[j]) % 2 != 0):
             even_odd_list.append(li[i])
